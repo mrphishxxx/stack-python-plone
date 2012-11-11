@@ -1,3 +1,7 @@
 import sys
 sys.path.append('/home/dotcloud/current')
-from app.app import app as application
+import os
+from paste.deploy import loadapp
+#current_dir = os.getcwd()
+application = loadapp('config:production.ini', relative_to=current_dir)
+
