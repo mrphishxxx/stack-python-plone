@@ -1,11 +1,10 @@
-#Boiler plate stack Python & PostgreSQL
+#Plone stack 
 
 ##What is this ?
-It is super easy to deploy any-stack on dotCloud, here is a tiny boiler plate to show you how simple and frustration-less dotCloud experience is.  
+This stack allows you deploy a basic Plone instance to dotcloud.
 
 ##What you get
-In this boiler plate you will find the basic to get a Python and PostgreSQL stack running:
+In this boiler plate you will find the basic to get a Plone stack running:
 * Use of the dotCoud environment
-* Communication with a database, PostgreSQL
 * wsgi setup
-* Advanced `dotCloud.yml` option: `postinstall script to create a new database.
+* getPlone.sh script `dotCloud.yml` a `postinstall script that grabs a set of packages (eggs) known to work on dotcloud and then builds a plone instance.
