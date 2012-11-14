@@ -25,8 +25,8 @@ Visit your new Plone site at
 `http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in.
 Use the following credentials:
 
-   username: admin
-   password: admin
+    username: admin
+    password: admin
 
 For example if your instance is called `zope` and your dotcloud username is
 `fooguy`, then the site should be accessible at:
