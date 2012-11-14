@@ -38,3 +38,11 @@ For example if your instance is called `zope` and your dotcloud username is
 `fooguy`, then the site should be accessible at:
 
     http://zope-fooguy.dotcloud.com/Plone
+
+##Troubleshooting:
+
+Problem: You see '500 Internal Server Error' it is usually because the
+instance has not fully started yet 
+
+Solution: (wait 30 seconds and try again).
+
