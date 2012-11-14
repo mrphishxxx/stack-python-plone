@@ -20,6 +20,10 @@ In this boiler plate you will find the basics to get a Plone stack running:
     git clone git@github.com:pigeonflight/stack-python-plone.git $instance
     cd $instance
     dotcloud create $instance
+
+Once your instance has been configured to work with dotcloud you can run
+the following command:
+
     dotcloud push 
   
 ##Usage:
