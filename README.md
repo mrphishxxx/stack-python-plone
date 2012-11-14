@@ -23,3 +23,8 @@ In this boiler plate you will find the basic to get a Plone stack running:
 ##Usage:
 Visit your new Plone site at
 `http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in with the credentials admin:admin.
+
+For example if your instance is called `zope` and your dotcloud username is
+`fooguy`, then the site should be accessible at:
+
+    http://zope-fooguy.dotcloud.com/Plone
