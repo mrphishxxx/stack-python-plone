@@ -1,16 +1,18 @@
 #Plone stack 
 
 ##What is this ?
-This stack allows you deploy a basic Plone instance to dotcloud.
+This stack allows you to deploy a basic Plone instance to dotcloud.
 
 ##What you get
 A working Plone Site located at
 `{yourinstance}-{useraccount}.dotcloud.com/Plone`
 
-In this boiler plate you will find the basic to get a Plone stack running:
+In this boiler plate you will find the basics to get a Plone stack running:
 * Use of the dotCoud environment
-* wsgi setup
 * `getplone.sh` script `dotCloud.yml` a `postinstall script that grabs a set of packages (eggs) known to work on dotcloud and then builds a plone instance.
+* this is NOT a wsgi based setup, it uses the more common approach of
+  running a zope instance behind a proxy
+* everything is done for you
 
 ##Installation:
 
