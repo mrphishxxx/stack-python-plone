@@ -1,7 +1,8 @@
 #Plone stack 
 
 ##What is this ?
-This stack allows you to deploy a basic Plone instance to dotcloud.
+This stack allows you to deploy a basic Plone instance to dotcloud. This configuration is not recommended for deployments and is 
+currently most suited for development (hopefully, this will change in the future).
 
 ##What you get
 A working Plone Site located at
@@ -75,3 +76,5 @@ running buildout. Do this as follows:
 Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
 
 Make running buildout easier
+
+Make it easier to create a new development package
