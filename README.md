@@ -38,6 +38,7 @@ For example if your instance is called `zope` and your dotcloud username is
 `fooguy`, then the site should be accessible at:
 
     http://zope-fooguy.dotcloud.com/Plone
+    
 
 ##Troubleshooting:
 
@@ -46,3 +47,6 @@ instance has not fully started yet
 
 Solution: (wait 30 seconds and try again).
 
+##Todo:
+
+Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
