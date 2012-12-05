@@ -54,7 +54,7 @@ Use the following command to view the status of services:
 
     dotcloud run www supervisorctl status
     
-##Managing the buildout.cfg file
+##Editing the buildout.cfg file
 
 Use the following command to edit the buildout.cfg file:
 
@@ -65,11 +65,17 @@ Use the following command to edit the buildout.cfg file:
 At the moment, the best approach to running buildout is to stop the instance before
 running buildout. Do this as follows:
 
-    dotcloud run www supervisorctl stop all
     dotcloud run www
     cd current
-    buildout
+    
+When running buildout make sure that the plone4site part is disabled:
+
+    buildout plone4site:enabled=false
     exit
+
+Restart the plone instance:
+
+    dotcloud run www supervisorctl restart plone
     
 ##Todo:
 
