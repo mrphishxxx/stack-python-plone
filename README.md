@@ -60,7 +60,7 @@ Use the following command to edit the buildout.cfg file:
 
     dotcloud run www nano buildout.cfg
 
-#Running buildout
+##Running buildout
 
 At the moment, the best approach to running buildout is to stop the instance before
 running buildout. Do this as follows:
