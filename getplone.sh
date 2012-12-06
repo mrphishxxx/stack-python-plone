@@ -8,7 +8,7 @@ mkdir -p /home/dotcloud/data
 if [ ! -f /home/dotcloud/data/eggs.tgz ];                                                                                                       
 then                                                                                                                        
     echo "Downloading egg bundle" 
-    wget https://plone-egg-packages.googlecode.com/files/eggs.tgz -O /home/dotcloud/data/eggs.tgz    
+    wget http://plone-egg-packages.googlecode.com/files/eggs-dec062012.tgz -O /home/dotcloud/data/eggs.tgz    
     cd /home/dotcloud/data
     tar xfz eggs.tgz
 fi
