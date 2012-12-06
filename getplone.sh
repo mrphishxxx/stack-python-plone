@@ -8,6 +8,7 @@ if [ ! -f /home/dotcloud/data/eggs.tgz ];
 then                                                                                                                        
     echo "Downloading egg bundle" 
     wget http://dl.dropbox.com/u/1004432/eggs.tgz -O /home/dotcloud/data/eggs.tgz
+    mkdir -p /home/dotcloud/data
     cd /home/dotcloud/data
     tar xfz eggs.tgz
 fi
