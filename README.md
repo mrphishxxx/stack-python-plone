@@ -72,6 +72,19 @@ Restart the plone instance to see your changes:
 
     dotcloud run www supervisorctl restart plone
     
+##The Aliases (the easy way)
+Before you run any of the following commands you must first initialize the aliases
+
+    sh aliases
+
+After the initialization of the aliases you can now run the following commands
+
+    plonecfg
+    plonebuild
+    plonerestart
+    plonestatus
+
+
 ##Todo:
 
 [ ] Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
