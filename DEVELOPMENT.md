@@ -11,6 +11,8 @@ Follow the README or QUICKSTART instructions then come back here
     easy_install pip
     pip install -r requirements.txt
 
+This includes all the developer tools including zopeskel and dotcloud
+
 ##Create your first package in the 'src' directory
 
    cd src

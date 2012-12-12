@@ -1,13 +1,13 @@
 ##Todo:
 
-[ ] Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
+[ ] Script to generate custom egg bundle to distribution with getplone.sh script
 
 [x] Make running buildout easier
 
-[x] Make it easier to create a new development package (in progress, added zopeskel and a src directory)
+[x] Make it easier to create a new development package 
 
 [ ] Add sauna.reload
 
-[ ] Create a simple alias that syncs files from dev machine to dotcloud server
+[.] An alias that syncs files from local machine to dotcloud service
 
 [ ] Create sphinx based documentation add to READ THE DOCS 
