@@ -12,8 +12,9 @@ In this boiler plate you will find the basics to get a Plone stack running:
 * Use of the dotCoud environment
 * `getplone.sh` script `dotCloud.yml` a `postinstall script that grabs a set of packages (eggs) known to work on dotcloud and then builds a plone instance.
 * this is NOT a wsgi based setup, it uses the more common approach of
-  running a zope instance behind a proxy
+  running a zope instance proxied by a webserver (in this case nginx)
 * everything is done for you and the instance is managed using supervisord
+* zopeskel for generating new plone packages quickly
 
 ##Installation:
 
@@ -62,13 +63,14 @@ Use the following command to edit the buildout.cfg file:
 
 ##Running buildout
 
-At the moment, the best approach to running buildout is to stop the instance before
-running buildout. Do this as follows:
+At the moment, the best approach to running buildout is to log in to your
+dotcloud instance and then run buildout under the 'current' directory,
+do this as follows:
 
     dotcloud run www
     cd current
     
-When running buildout make sure that the plone4site part is disabled:
+Then run buildout with the plone4site part disabled:
 
     buildout plone4site:enabled=false
     exit
@@ -83,4 +85,4 @@ Add a custom script that can generate an egg bundle for distribution with the ge
 
 Make running buildout easier
 
-Make it easier to create a new development package
+Make it easier to create a new development package (in progress, added zopeskel and a src directory)
