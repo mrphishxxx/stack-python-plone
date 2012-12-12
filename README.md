@@ -63,26 +63,21 @@ Use the following command to edit the buildout.cfg file:
 
 ##Running buildout
 
-At the moment, the best approach to running buildout is to log in to your
-dotcloud instance and then run buildout under the 'current' directory,
-do this as follows:
+After making changes to buildout.cfg run 'cloudbuildout', using the 
+following command:
 
-    dotcloud run www
-    cd current
+    dotcloud run www sh current/cloudbuildout 
     
-Then run buildout with the plone4site part disabled:
-
-    buildout plone4site:enabled=false
-    exit
-
-Restart the plone instance:
+Restart the plone instance to see your changes:
 
     dotcloud run www supervisorctl restart plone
     
 ##Todo:
 
-Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
+[ ] Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
 
-Make running buildout easier
+[x] Make running buildout easier
 
-Make it easier to create a new development package (in progress, added zopeskel and a src directory)
+[ ] Make it easier to create a new development package (in progress, added zopeskel and a src directory)
+
+[ ] Add sauna.reload
