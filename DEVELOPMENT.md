@@ -1,3 +1,7 @@
+The following instructions have been tested on cloud9 ide. 
+You may have challenges on other platforms.
+
+
 #Start by installing everything
 
 Follow the README or QUICKSTART instructions then come back here
