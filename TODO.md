@@ -9,3 +9,5 @@
 [ ] Add sauna.reload
 
 [ ] Create a simple alias that syncs files from dev machine to dotcloud server
+
+[ ] Create sphinx based documentation add to READ THE DOCS 
