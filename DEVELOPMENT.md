@@ -16,10 +16,26 @@ Follow the README or QUICKSTART instructions then come back here
    cd src
    zopeskel dexterity
 
+when prompted name it 'dex.example' and accept all defaults
+
 ##Edit the add-ons.cfg file
+Add your new package to the add-ons.cfg file
+
+    [buildout]
+    extensions += mr.developer buildout.dumppickedversions
+    auto-checkout = 
+    #             your.package
+                  dex.example
+    eggs += 
+    #             your.package
+                  dex.example
+    [sources]
+    # assumes that packages are added to the src/ directory
+    # your.package = fs your.package
+    dex.example = fs dex.example
 
 
-##Deploy
+##Deploy to dotcloud (this will wipe your dotcloud instance)
 
     dotcloud push
 

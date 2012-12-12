@@ -84,13 +84,3 @@ After the initialization of the aliases you can now run the following commands
     plonerestart
     plonestatus
 
-
-##Todo:
-
-[ ] Add a custom script that can generate an egg bundle for distribution with the getplone.sh script
-
-[x] Make running buildout easier
-
-[ ] Make it easier to create a new development package (in progress, added zopeskel and a src directory)
-
-[ ] Add sauna.reload
