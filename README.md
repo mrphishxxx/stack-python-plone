@@ -75,7 +75,7 @@ Restart the plone instance to see your changes:
 ##The Aliases (the easy way)
 Before you run any of the following commands you must first initialize the aliases
 
-    sh aliases
+    source aliases
 
 After the initialization of the aliases you can now run the following commands
 
