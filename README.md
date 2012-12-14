@@ -78,7 +78,7 @@ Use the following command to edit the buildout.cfg file:
     dotcloud run www nano buildout.cfg
 
     
-##The Convencience Commands/Aliases (the recommended approach)
+##The Convenience Commands/Aliases (the recommended approach)
 This distro ships with some convenient commands for managing your plone based
 dotcloud service. Before these commands will work you must initialize them
 using the command below:
