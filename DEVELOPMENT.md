@@ -62,7 +62,7 @@ to your code.
     plonerestart
     
 ##Usage:
-Visit your new Plone site in your web browser at
+Visit your Plone site in your web browser at
 `http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in.
 Use the following credentials:
 
