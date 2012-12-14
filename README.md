@@ -16,7 +16,7 @@ In this boiler plate you will find the basics to get a Plone stack running:
 * everything is done for you and the instance is managed using supervisord
 * zopeskel for generating new plone packages quickly
 
-##Install Tools
+##Preparation (Install Tools)
 The following commands are used on a Cloud9 IDE instance:
 
     easy_install pip
