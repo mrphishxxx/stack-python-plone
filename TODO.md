@@ -6,6 +6,8 @@
 
 [x] Make it easier to create a new development package 
 
+[ ] Make it easy to set a default admin password
+
 [ ] Create an interactive setup script to run on local machine, it would
     allow things like specifying preferred remote editor (nano or vi)
 
