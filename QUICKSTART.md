@@ -3,11 +3,15 @@
 The following instructions assume that you already have dotcloud installed and
 configured and you've already checkout the stack-python-plone from github.
 
-##Installation:
-While in the checked out stack-python-plone directory do the following:
+##Preparation:
+Before you do anything else be sure to install the required tools:
 
     easy_install pip
     pip install -r requirements.txt
+    
+##Installation:
+While in the checked out stack-python-plone directory do the following:
+
 
     instance=instancename
     dotcloud create $instance
