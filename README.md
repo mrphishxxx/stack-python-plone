@@ -41,6 +41,8 @@ This step is needed if you did not use the Cloud9 IDE Clone URL approach above
     git clone git://github.com/pigeonflight/stack-python-plone.git $instance
     cd $instance
 
+Create an instance at dotcloud using the following command
+
     dotcloud create $instance
 
 You may be prompted to run *dotcloud setup* if you haven't done so before.
