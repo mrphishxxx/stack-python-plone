@@ -53,7 +53,7 @@ the following command:
     dotcloud push 
       
 ##Usage:
-Visit your new Plone site at
+Using a web browser, visit your new Plone site at
 `http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in.
 Use the following credentials:
 
@@ -143,3 +143,4 @@ Solution: remove the know_hosts file, this can be done using the following comma
 
     rm ~/.ssh/known_hosts
     
+Vi
