@@ -12,6 +12,10 @@ The following commands will install the developer tools including zopeskel and d
 
     easy_install pip
     pip install -r requirements.txt
+    
+Activate aliases
+
+    source aliases
 
 ##Create your first package in the 'src' directory
 
