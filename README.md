@@ -17,26 +17,39 @@ In this boiler plate you will find the basics to get a Plone stack running:
 * zopeskel for generating new plone packages quickly
 * a bunch of convenience commands for managing your Plone site remotely
 
+##Installation on Cloud9 IDE
+
+If you're using Cloud9 IDE you can create a new instance using the clone URL option and add
+the URL 'https://github.com/pigeonflight/stack-python-plone' in the dialog.
+The resulting instance
+
 ##Preparation (Install Tools)
-The following commands are used on a Cloud9 IDE instance:
+On *Cloud9 IDE* the following commands will work out of the box:
 
     easy_install pip
     pip install -r requirements.txt
     
-The actual commands above may vary on other platforms
+You may need to do a few additional things if you are on a non *Cloud9 IDE* instance.
 
 ##Installation:
 
+
     instance=instancename
+
+This step is needed if you did not use the Cloud9 IDE Clone URL approach above
+
     git clone git://github.com/pigeonflight/stack-python-plone.git $instance
     cd $instance
+
     dotcloud create $instance
+
+You may be prompted to run *dotcloud setup* if you haven't done so before.
 
 Once your instance has been configured to work with dotcloud you can run
 the following command:
 
     dotcloud push 
-  
+      
 ##Usage:
 Visit your new Plone site at
 `http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in.
