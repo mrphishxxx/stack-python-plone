@@ -52,6 +52,9 @@ Plone with your package.
     dotcloud push
     
 ##Deploy on existing instance (deploy without wiping)
+This is useful in scenarios where yo don not want to wipe the data from your 
+dotcloud service. A common scenario is when you're making quick changes
+to your code.
 
     plonepush src
     plonepush add-ons.cfg
