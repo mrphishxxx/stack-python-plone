@@ -15,6 +15,7 @@ In this boiler plate you will find the basics to get a Plone stack running:
   running a zope instance proxied by a webserver (in this case nginx)
 * everything is done for you and the instance is managed using supervisord
 * zopeskel for generating new plone packages quickly
+* a bunch of convenience commands for managing your Plone site remotely
 
 ##Preparation (Install Tools)
 The following commands are used on a Cloud9 IDE instance:
@@ -62,7 +63,7 @@ Use the following command to edit the buildout.cfg file:
     dotcloud run www nano buildout.cfg
 
     
-##The Aliases (the recommended approach)
+##The Convencience Commands/Aliases (the recommended approach)
 This distro ships with some convenient commands for managing your plone based
 dotcloud service. Before these commands will work you must initialize them
 using the command below:
