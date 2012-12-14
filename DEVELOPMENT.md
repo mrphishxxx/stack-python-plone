@@ -2,27 +2,30 @@ The following instructions have been tested on cloud9 ide.
 You may have challenges on other platforms.
 
 
-#Start by installing everything
+##Deploy First (Start with an existing deployment)
 
-Follow the README or QUICKSTART instructions then come back here
+We assume that you've followed the README or QUICKSTART instructions and have done
+an initial deployment using *dotcloud push*
 
 ##Install Developer tools
+The following commands will install the developer tools including zopeskel and dotcloud
 
     easy_install pip
     pip install -r requirements.txt
-
-This includes all the developer tools including zopeskel and dotcloud
 
 ##Create your first package in the 'src' directory
 
     cd src
     zopeskel dexterity
+    
 
 when prompted name it 'dex.example' and accept all defaults
 (Using the name 'dex.example' will save you a bit of time
 since we already have the required lines commented in
-the add-ons.cfg file)
+the add-ons.cfg file). Then return to the parent directory
 
+    cd ../
+    
 ##Edit the add-ons.cfg file
 Add your new package to the add-ons.cfg file, it should look like this:
 
@@ -37,13 +40,20 @@ Add your new package to the add-ons.cfg file, it should look like this:
     dex.example = fs dex.example
 
 
-##Deploy to dotcloud (this will wipe your dotcloud instance)
-This step pushes your new dex.example package to dotcloud
+##Clean Deploy to dotcloud (this will wipe your dotcloud instance)
+This step pushes your new dex.example package to dotcloud,
 wipes the dotcloud instance and installs a brand new clean
 Plone with your package.
 
     dotcloud push
+    
+##Deploy on existing instance (deploy without wiping)
 
+    plonepush src
+    plonepush add-ons.cfg
+    plonebuild
+    plonerestart
+    
 ##Usage:
 Visit your new Plone site in your web browser at
 `http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in.
