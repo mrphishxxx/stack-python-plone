@@ -20,3 +20,5 @@
 [ ] Bundle everything into a neat python package and distribute via pypi
 
 [ ] Make it possible to deploy different Plone version (old and dev versions)
+
+[ ] Remove dependency on my dropbox for the initial buildout.cfg
