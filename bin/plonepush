@@ -1,0 +1,28 @@
+#! /usr/bin/env python
+import argparse
+import commands
+import os
+
+pushfile = '''tar -cf- %(filename)s | base64 -w0 | dotcloud run www -- "base64 --decode | tar -xf-"''' 
+fileremoveold = '''dotcloud run www rm -r current/%(filename)s'''
+fileinstallnew = '''dotcloud run www mv "%(filename)s" current/'''
+
+parser = argparse.ArgumentParser(description='Push a file or directory to the www dotcloud service ~/current directory')
+parser.add_argument('files', metavar='N', type=str, nargs='+',
+                   help='a file or folder to be sent to the *current* directory for the www service')
+
+args = parser.parse_args()
+fileinfo = {'filename':args.files[0]}
+
+if os.path.exists(fileinfo['filename']):
+    pushfile_cmd = pushfile % fileinfo
+    fileremoveold_cmd = fileremoveold % fileinfo
+    fileinstallnew_cmd = fileinstallnew % fileinfo
+
+    print("moving over,this may take awhile.....")
+    commands.getoutput(pushfile_cmd)
+    print("installing in the ~/current directory")
+    commands.getoutput(fileremoveold_cmd)
+    commands.getoutput(fileinstallnew_cmd)
+else:
+    print("There is no file or folder called %(filename)s. Aborting push" % fileinfo)

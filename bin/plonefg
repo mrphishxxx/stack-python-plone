@@ -1,0 +1,3 @@
+#! /bin/bash
+cd ~/current                                                                                                                                                       
+RELOAD_PATH=src bin/instance fg

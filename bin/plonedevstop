@@ -1,0 +1,5 @@
+#! /bin/bash
+zpid=`dotcloud run www ps aux |grep 'Zope' |cut -d ' ' -f2`
+pid=`dotcloud run www ps aux |grep 'instance fg' |cut -d ' ' -f2`
+echo killing $pid $zpid
+dotcloud run www kill -9 $pid $zpid

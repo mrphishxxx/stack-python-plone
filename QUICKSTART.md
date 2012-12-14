@@ -45,3 +45,4 @@ or
 ##Other commands
 
     plonestatus
+    plonepush   #used to send directories to the buildout

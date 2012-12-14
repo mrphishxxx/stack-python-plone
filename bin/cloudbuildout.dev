@@ -1,0 +1,4 @@
+#! /bin/bash
+cd ~/current                                                                                                                                                       
+buildout=/opt/ve/2.7/bin/buildout                                                                                                                                  
+$buildout -c development.cfg plone4site:enabled=false 
