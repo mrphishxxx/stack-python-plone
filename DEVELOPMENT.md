@@ -20,11 +20,11 @@ This includes all the developer tools including zopeskel and dotcloud
 
 when prompted name it 'dex.example' and accept all defaults
 (Using the name 'dex.example' will save you a bit of time
-since we already have the required lines commented 
+since we already have the required lines commented in
 the add-ons.cfg file)
 
 ##Edit the add-ons.cfg file
-Add your new package to the add-ons.cfg file
+Add your new package to the add-ons.cfg file, it should look like this:
 
     [buildout]
     extensions += mr.developer buildout.dumppickedversions
