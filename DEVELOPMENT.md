@@ -15,8 +15,8 @@ This includes all the developer tools including zopeskel and dotcloud
 
 ##Create your first package in the 'src' directory
 
-   cd src
-   zopeskel dexterity
+    cd src
+    zopeskel dexterity
 
 when prompted name it 'dex.example' and accept all defaults
 (Using the name 'dex.example' will save you a bit of time
