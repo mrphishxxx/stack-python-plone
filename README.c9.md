@@ -1,51 +1,24 @@
 #Plone stack 
+These instructions are specific to the Cloud9 IDE platform, and assume that you
+start by cloning the github URL.
 
-##What is this ?
-This stack allows you to deploy a basic Plone instance to dotcloud. This configuration is not recommended for production deployments and is 
-currently most suited for development (this may change in the future).
+##Installation on Cloud9 IDE using Clone URL
 
-##What you get
-A working Plone Site located at
-`{yourinstance}-{useraccount}.dotcloud.com/Plone`
-
-In this boiler plate you will find the basics to get a Plone stack running:
-* Use of the dotCoud environment
-* `getplone.sh` script `dotCloud.yml` a `postinstall script that grabs a set of packages (eggs) known to work on dotcloud and then builds a plone instance.
-* this is NOT a wsgi based setup, it uses the more common approach of
-  running a zope instance proxied by a webserver (in this case nginx)
-* everything is done for you and the instance is managed using supervisord
-* zopeskel for generating new plone packages quickly
-* a bunch of convenience commands for managing your Plone site remotely
+Create a new instance using the clone URL option and add
+the URL 'https://github.com/pigeonflight/stack-python-plone' in the dialog.
+The resulting instance
 
 ##Preparation (Install Tools)
-
-###Cloud9 IDE
-On *Cloud9 IDE* the following commands will install the tools,
-See *README.c9* to see an alternative approach with Cloud9 IDE:
+On *Cloud9 IDE* the following commands will work out of the box:
 
     source aliases
     installc9tools
-
-###Ubuntu or OSX
-If you are on a unix terminal, the following command should work:
-
-    sudo easy_install pip
-    sudo pip install -r requirements
-    dotcloud setup
-
     
 ##Installation:
-In this step we create a new instanceThis step is needed if you did not use the Cloud9 IDE Clone URL approach above
-
-    instance=instancename
-    git clone git://github.com/pigeonflight/stack-python-plone.git $instance
-    cd $instance
-
 Create an instance at dotcloud using the following command
 
+    instance=instancename
     dotcloud create $instance
-
-You may be prompted to run *dotcloud setup* if you haven't done so before.
 
 Once your instance has been configured to work with dotcloud you can run
 the following command:
@@ -69,13 +42,17 @@ For example if your instance is called `zope` and your dotcloud username is
 
 Use the following command to view the status of services:
 
-    dotcloud run www supervisorctl status
+    plonestatus
     
 ##Editing the buildout.cfg file
 
 Use the following command to edit the buildout.cfg file:
 
     dotcloud run www nano buildout.cfg
+
+or to edit with vim
+
+    plonecfg
 
     
 ##The Convenience Commands/Aliases (the recommended approach)

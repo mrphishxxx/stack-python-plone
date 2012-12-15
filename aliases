@@ -16,5 +16,5 @@ alias restartplone='dotcloud run www supervisorctl restart plone'
 alias plonestop='dotcloud run www supervisorctl stop plone'
 alias plonestart='dotcloud run www supervisorctl start plone'
 alias plonedevstart='dotcloud run www sh current/bin/plonefg'
-cp bin/plonedevstop bin/plonepush ~/bin/
-chmod +x ~/bin/plonepush ~/bin/plonedevstop
+cp bin/installc9tools bin/plonedevstop bin/plonepush ~/bin/
+chmod +x ~/bin/installc9tools ~/bin/plonepush ~/bin/plonedevstop
