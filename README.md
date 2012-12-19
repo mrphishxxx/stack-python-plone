@@ -36,21 +36,18 @@ required tools. (See [[README.c9]] for an alternative approach):
 
     
 ##Installation:
-In this step we create a new instance
+In this step we prepare and create a new dotcloud stack (in our context this 
+will become a server running Plone). 
 
-    instance=instancename
-    git clone git://github.com/pigeonflight/stack-python-plone.git $instance
-    cd $instance
+Start by cloning the stack:
 
-Create an instance at dotcloud using the following command
+    plonestack=stackname
+    git clone git://github.com/pigeonflight/stack-python-plone.git $plonestack
+    cd $plonestack
 
-    dotcloud create $instance
+Then create an instance of the stack at dotcloud using the 'create' and 'push':
 
-You may be prompted to run *dotcloud setup* if you haven't done so before.
-
-Once your instance has been configured to work with dotcloud you can run
-the following command:
-
+    dotcloud create $stack
     dotcloud push 
       
 ##Usage:
@@ -144,4 +141,3 @@ Solution: remove the know_hosts file, this can be done using the following comma
 
     rm ~/.ssh/known_hosts
     
-Vi
