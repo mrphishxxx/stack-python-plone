@@ -19,12 +19,6 @@ In this boiler plate you will find the basics to get a Plone stack running:
 
 ##Preparation (Install Tools)
 
-###Cloud9 IDE
-On *Cloud9 IDE* the following commands will install the tools,
-See *README.c9* to see an alternative approach with Cloud9 IDE:
-
-    source aliases
-    installc9tools
 
 ###Ubuntu or OSX
 If you are on a unix terminal, the following command should work:
@@ -33,9 +27,16 @@ If you are on a unix terminal, the following command should work:
     sudo pip install -r requirements
     dotcloud setup
 
+###Cloud9 IDE
+If you are using *Cloud9 IDE* for development, the following commands will install the
+required tools. (See [[README.c9]] for an alternative approach):
+
+    source aliases
+    installc9tools
+
     
 ##Installation:
-In this step we create a new instanceThis step is needed if you did not use the Cloud9 IDE Clone URL approach above
+In this step we create a new instance
 
     instance=instancename
     git clone git://github.com/pigeonflight/stack-python-plone.git $instance
