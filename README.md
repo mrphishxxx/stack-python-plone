@@ -47,7 +47,7 @@ Start by cloning the stack:
 
 Then create an instance of the stack at dotcloud using the 'create' and 'push':
 
-    dotcloud create $stack
+    dotcloud create $plonestack
     dotcloud push 
       
 ##Usage:
