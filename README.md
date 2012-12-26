@@ -16,35 +16,32 @@ In this boiler plate you will find the basics to get a Plone stack running:
 * everything is done for you and the instance is managed using supervisord
 * zopeskel for generating new plone packages quickly
 * a bunch of convenience commands for managing your Plone site remotely
+* If you are using Cloud9 IDE there is a custom approach noted below.
 
 ##Preparation (Install Tools)
 
-
-###Ubuntu or OSX
-If you are on a unix terminal, the following command should work:
+###Ubuntu/Debian or OSX
+If you are on a unix terminal, the following command should work (*Cloud9 IDE* users may skip this step):
 
     sudo easy_install pip
     sudo pip install -r requirements
     dotcloud setup
 
-###Cloud9 IDE
-If you are using *Cloud9 IDE* for development, the following commands will install the
-required tools. (See [[README.c9]] for an alternative approach):
-
-    source aliases
-    installc9tools
-
     
 ##Installation:
 In this step we prepare and create a new dotcloud stack (in our context this 
 will become a server running Plone). 
-
 Start by cloning the stack:
 
     plonestack=stackname
     git clone git://github.com/pigeonflight/stack-python-plone.git $plonestack
     cd $plonestack
 
+###Cloud9 IDE Specific step
+If you are using Cloud9 IDE the following commands will configure the dotcloud and c9 tools
+    source aliases
+    installc9tools
+    
 Then create an instance of the stack at dotcloud using the 'create' and 'push':
 
     dotcloud create $plonestack
@@ -96,8 +93,9 @@ After the initialization of the aliases you will be able to run the following:
     plonedevstart - runs a dev build with sauna.reload enabled (warning locks terminal on cloud9 ide)
     plonedevstop - stops the dev build (will need to launch this on a new terminal
                      as the old terminal will be locked by plonedevstart)
+    installc9tools - a script that configures Cloud9 IDE for working with Plone on dotcloud
 
-##Running buildout (the other approach)
+##Running buildout (the other, slightly more manual approach)
 
 After making changes to buildout.cfg run 'cloudbuildout', using the 
 following command:
