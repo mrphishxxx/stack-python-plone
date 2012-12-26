@@ -18,6 +18,10 @@ In this boiler plate you will find the basics to get a Plone stack running:
 * a bunch of convenience commands for managing your Plone site remotely
 * If you are using Cloud9 IDE there is a custom approach noted below.
 
+##What you need
+
+Before you begin, make sure that you have and know your dotcloud account credentials.
+
 ##Step 1 - Installation:
 In this step we prepare and create a new dotcloud stack (in our context this 
 will become a server running Plone). 
@@ -39,6 +43,8 @@ If you are using Cloud9 IDE the following commands will configure the dotcloud a
 
     source aliases
     installc9tools
+    
+You will be prompted for your dotcloud username and password.
     
 ##Step 2 - Create Instance at Dotcloud
 Create an instance of the stack at dotcloud using the 'create' and 'push' commands:
