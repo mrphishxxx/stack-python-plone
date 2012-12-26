@@ -18,17 +18,7 @@ In this boiler plate you will find the basics to get a Plone stack running:
 * a bunch of convenience commands for managing your Plone site remotely
 * If you are using Cloud9 IDE there is a custom approach noted below.
 
-##Preparation (Install Tools)
-
-###Ubuntu/Debian or OSX
-If you are on a unix terminal, the following command should work (*Cloud9 IDE* users may skip this step):
-
-    sudo easy_install pip
-    sudo pip install -r requirements
-    dotcloud setup
-
-    
-##Installation:
+##Step 1 - Installation:
 In this step we prepare and create a new dotcloud stack (in our context this 
 will become a server running Plone). 
 Start by cloning the stack:
@@ -37,12 +27,21 @@ Start by cloning the stack:
     git clone git://github.com/pigeonflight/stack-python-plone.git $plonestack
     cd $plonestack
 
+###Ubuntu/Debian or OSX
+If you are on a unix terminal, the following command should work (*Cloud9 IDE* users may skip this step):
+
+    sudo easy_install pip
+    sudo pip install -r requirements
+    dotcloud setup
+
 ###Cloud9 IDE Specific step
-If you are using Cloud9 IDE the following commands will configure the dotcloud and c9 tools
+If you are using Cloud9 IDE the following commands will configure the dotcloud and c9 tools:
+
     source aliases
     installc9tools
     
-Then create an instance of the stack at dotcloud using the 'create' and 'push':
+##Step 2 - Create Instance at Dotcloud
+Create an instance of the stack at dotcloud using the 'create' and 'push' commands:
 
     dotcloud create $plonestack
     dotcloud push 
@@ -60,20 +59,20 @@ For example if your instance is called `zope` and your dotcloud username is
 
     http://zope-fooguy.dotcloud.com/Plone
 
-##View the status of the services
+###View the status of the services
 
 Use the following command to view the status of services:
 
     dotcloud run www supervisorctl status
     
-##Editing the buildout.cfg file
+###Editing the buildout.cfg file
 
 Use the following command to edit the buildout.cfg file:
 
     dotcloud run www nano buildout.cfg
 
     
-##The Convenience Commands/Aliases (the recommended approach)
+###The Convenience Commands/Aliases (the recommended approach)
 This distro ships with some convenient commands for managing your plone based
 dotcloud service. Before these commands will work you must initialize them
 using the command below:
@@ -95,7 +94,7 @@ After the initialization of the aliases you will be able to run the following:
                      as the old terminal will be locked by plonedevstart)
     installc9tools - a script that configures Cloud9 IDE for working with Plone on dotcloud
 
-##Running buildout (the other, slightly more manual approach)
+###Running buildout (the other, slightly more manual approach)
 
 After making changes to buildout.cfg run 'cloudbuildout', using the 
 following command:
