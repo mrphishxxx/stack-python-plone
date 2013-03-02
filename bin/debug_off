@@ -1,0 +1,4 @@
+#! /bin/bash
+~/current/bin/cloudbuildout                                                                                                                                                     
+cd
+supervisorctl restart plone
