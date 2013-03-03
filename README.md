@@ -54,7 +54,7 @@ Create an instance of the stack at dotcloud using the 'create' and 'push' comman
       
 ##Usage:
 Using a web browser, visit your new Plone site at
-`http://{yourinstance}-{useraccount}.dotcloud.com/Plone` and log in.
+`http://{yourinstance}-{useraccount}.dotcloud.com` and log in.
 Use the following credentials:
 
     username: admin
@@ -63,7 +63,18 @@ Use the following credentials:
 For example if your instance is called `zope` and your dotcloud username is
 `fooguy`, then the site should be accessible at:
 
-    http://zope-fooguy.dotcloud.com/Plone
+    http://zope-fooguy.dotcloud.com
+
+###Zope Server Root
+
+You can always reach the root of the Zope server by visiting
+`http://{yourinstance}-{useraccount}.dotcloud.com/_setup_`.
+
+For example above, the zope root would be:
+
+    http://zope-fooguy.dotcloud.com/_setup_
+
+
 
 ###View the status of the services
 
