@@ -132,4 +132,3 @@ Solution: remove the know_hosts file, this can be done using the following comma
 
     rm ~/.ssh/known_hosts
     
-Vi
