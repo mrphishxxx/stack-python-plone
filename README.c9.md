@@ -64,7 +64,7 @@ or to edit with vim
     plonecfg
 
     
-##The Convenience Commands/Aliases (the recommended approach)
+###The Convenience Commands/Aliases (the recommended approach)
 This distro ships with some convenient commands for managing your plone based
 dotcloud service. Before these commands will work you must initialize them
 using the command below:
@@ -80,10 +80,13 @@ After the initialization of the aliases you will be able to run the following:
     plonestop - stops the remote plone instance
     plonestatus - reports on the status of the remote plone instance
     plonepush - pushes a local file to the remote plone instance
+    plonedebugon - restarts plone in debug mode
+    plonedebugoff - restarts plone in prodoction mode
     plonedevbuild - does a build based on the development.cfg file
     plonedevstart - runs a dev build with sauna.reload enabled (warning locks terminal on cloud9 ide)
     plonedevstop - stops the dev build (will need to launch this on a new terminal
                      as the old terminal will be locked by plonedevstart)
+    installc9tools - a script that configures Cloud9 IDE for working with Plone on dotcloud
 
 ##Running buildout (the other approach)
 
