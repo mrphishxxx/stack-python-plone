@@ -49,9 +49,8 @@ instance = instance
 zeoserver = zeoserver
 # create default plone content like news, events...
 profiles-initial =
-    products.cmfplone:plone-content
+    Products.CMFPlone:plone-content
     plone.app.theming:default
 profiles =
 #    my.package:default
 #    my.other.package:default
-
