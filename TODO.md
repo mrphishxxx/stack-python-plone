@@ -6,7 +6,7 @@
 
 [x] Make it easier to create a new development package 
 
-[ ] Make it easy to set a default admin password
+[x] Make it easy to set a default admin password
 
 [ ] Create an interactive setup script to run on local machine, it would
     allow things like specifying preferred remote editor (nano or vi)
@@ -23,4 +23,4 @@
 
 [ ] Make it possible to deploy different Plone version (old and dev versions)
 
-[ ] Remove dependency on my dropbox for the initial buildout.cfg
+[x] Remove dependency on my dropbox for the initial buildout.cfg
