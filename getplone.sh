@@ -1,7 +1,7 @@
 #! /bin/bash
 # we have buildout based on settings in requirements.txt
 buildout init
-wget http://dl.dropbox.com/u/1004432/plone.cfg -O buildout.cfg
+#wget http://dl.dropbox.com/u/1004432/plone.cfg -O buildout.cfg
 mkdir -p /home/dotcloud/data
 
 # get eggs previously compiled for python2.7 on a dotcloud machine
@@ -13,4 +13,6 @@ then
     tar xfz eggs.tgz
 fi
 cd /home/dotcloud/current
+python mkbuildout.py
 buildout
+echo adminPassword.txt

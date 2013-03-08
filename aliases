@@ -1,11 +1,4 @@
 alias drw='dotcloud run www'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -alF'
-alias ls='ls --color=auto -F'
 alias plonebuild='dotcloud run www sh current/bin/cloudbuildout'
 alias plonedevbuild='dotcloud run www sh current/bin/cloudbuildout.dev'
 alias plonedebugon='dotcloud run www sh current/bin/debug_on'
@@ -18,5 +11,6 @@ alias restartplone='dotcloud run www supervisorctl restart plone'
 alias plonestop='dotcloud run www supervisorctl stop plone'
 alias plonestart='dotcloud run www supervisorctl start plone'
 alias plonedevstart='dotcloud run www sh current/bin/plonefg'
+alias ploneadminpassword='dotcloud run www cat current/adminPassword.txt'
 cp bin/installc9tools bin/plonedevstop bin/plonepush ~/bin/
 chmod +x ~/bin/installc9tools ~/bin/plonepush ~/bin/plonedevstop
