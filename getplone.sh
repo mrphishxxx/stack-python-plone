@@ -15,4 +15,4 @@ fi
 cd /home/dotcloud/current
 python mkbuildout.py
 buildout
-echo adminPassword.txt
+cat adminPassword.txt
