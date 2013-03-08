@@ -55,25 +55,25 @@ Create an instance of the stack at dotcloud using the 'create' and 'push' comman
 ##Usage:
 Using a web browser, visit your new Plone site at
 `http://{yourinstance}-{useraccount}.dotcloud.com` and log in.
-Use the following credentials:
-
-    username: admin
-    password: admin
 
 For example if your instance is called `zope` and your dotcloud username is
 `fooguy`, then the site should be accessible at:
 
     http://zope-fooguy.dotcloud.com
 
+###Your credentials (admin password)
+The following command will retrieve your admin password:
+
+    dotcloud run www cat code/adminPassword.txt
+
 ###Zope Server Root
 
 You can always reach the root of the Zope server by visiting
 `http://{yourinstance}-{useraccount}.dotcloud.com/_setup_`.
 
-For example above, the zope root would be:
+For the example above, the zope root would be:
 
     http://zope-fooguy.dotcloud.com/_setup_
-
 
 
 ###View the status of the services
@@ -94,11 +94,12 @@ This distro ships with some convenient commands for managing your plone based
 dotcloud service. Before these commands will work you must initialize them
 using the command below:
 
-    source aliases; cat aliases >> ~/.bashrc
+    source aliases
 
 After the initialization of the aliases you will be able to run the following:
 
     plonecfg - for editing your remote buildout file with a vim interface
+    ploneadminpassword - show the admin password
     plonebuild - runs buildout to build the new configuration
     plonerestart - restarts the remote plone instance
     plonestart - starts the remote plone instance
